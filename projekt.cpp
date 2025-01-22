@@ -12,6 +12,10 @@ bool czy_pierwsza(int liczba) {
 int main() {
     int liczba;
     cin >> liczba;
+    if (liczba <= 0) {
+        cout << "Podana liczba nie jest dodatnia!" << endl;
+        return 1;
+    }
     cout << "Podano liczbe: " << liczba << endl;
     if (czy_pierwsza(liczba)) {
         cout << liczba << " jest liczba pierwsza" << endl;
@@ -20,4 +24,3 @@ int main() {
     }
     return 0;
 }
-
